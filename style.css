@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  color: #fff;
+}
+
+.about {
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+.todo {
+  padding: 2rem;
+  background: #fff;
+}
+
+.todo-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-container input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.todo-container button {
+  padding: 0.5rem 1rem;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-container button:hover {
+  background: #e68900;
+}
+
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.contact {
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea, form button {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #ff5722;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background: #e64a19;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .todo-container {
+    flex-direction: column;
+  }
+
+  form {
+    width: 100%;
+  }
+}
